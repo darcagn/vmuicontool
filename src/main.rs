@@ -66,7 +66,7 @@ fn main() {
     colorvec.resize(16, 0);
 
     print!(
-        "{}static const unsigned short vmu_savestate_icon_pal[16] = {{ ",
+        "{}static const unsigned short vmu_icon_pal[16] = {{ ",
         " ".repeat(INDENT_ALL)
     );
     for (i, item) in colorvec.iter().enumerate() {
@@ -97,7 +97,7 @@ fn main() {
     }
 
     print!(
-        "{}static const unsigned char vmu_savestate_icon_data[512] = {{ ",
+        "{}static const unsigned char vmu_icon_data[512] = {{ ",
         " ".repeat(INDENT_ALL)
     );
     for (i, byte) in datavec.iter().enumerate() {
